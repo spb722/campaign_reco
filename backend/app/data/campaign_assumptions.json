@@ -1,0 +1,9 @@
+{
+  "default_frequency_cap_per_30_days": 4,
+  "quiet_hours": {"start": "22:00", "end": "08:00"},
+  "default_confidence": 0.82,
+  "arpu": {"default_conversion": 0.08, "default_lift_rupees": 35},
+  "churn": {"default_save_rate": 0.05, "default_cost_per_save": 250},
+  "data_usage": {"default_conversion": 0.20, "default_gb_lift": 3},
+  "reactivation": {"default_reactivation_rate": 0.06}
+}

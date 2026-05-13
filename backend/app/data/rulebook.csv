@@ -1,0 +1,7 @@
+trend,trend_meaning,typical_action,allowed_action_families,eligible_intents,rulebook_fit_score
+Declining,Reduced engagement or early churn,Retention,retention|save|reactivation,reduce_churn|increase_activity,0.92
+Dormant,No meaningful revenue change or inactive,Reactivation / light NBO,reactivation|light_nbo|winback,reactivate_inactive|increase_activity|recommend_best_campaign,0.95
+Early Recovery,Initial recovery after inactivity,Gentle NBO,gentle_nbo|reactivation|cross_sell,reactivate_inactive|increase_activity|cross_sell,0.82
+Gradual Growth,Healthy consistent growth,Upsell / cross-sell,upsell|cross_sell|bundle,increase_arpu|increase_data_usage|upsell|cross_sell|recommend_best_campaign,0.91
+Strong Growth,Strong upward revenue momentum,Premium upsell / bundling,premium_upsell|bundle|cross_sell,increase_arpu|upsell|cross_sell|recommend_best_campaign,0.93
+Rapid Expansion,Exceptional growth,Protect value / avoid discounts,protect_value|premium_bundle,upsell|increase_arpu|recommend_best_campaign,0.78

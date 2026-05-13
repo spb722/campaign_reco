@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.idea/
+.deepeval/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+venv/
+outputs/json/*
+outputs/pdfs/*
+!outputs/json/.gitkeep
+!outputs/pdfs/.gitkeep
