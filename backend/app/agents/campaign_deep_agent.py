@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 
 from app.schemas.campaign import CampaignPlan
 from app.schemas.content import ContentDraft
-from app.services.llm_service import _load_runtime_env
+from app.services.llm_service import _chat_model, _llm_enabled, _load_runtime_env
 from app.services.campaign_store import save_campaign_version
 from app.tools.ml_score_tool import load_mock_ml_scores
 from app.tools.offer_tool import get_offer_candidates
@@ -42,11 +42,11 @@ _RUN_CONTEXTS: dict[str, dict[str, Any]] = {}
 
 def deep_agents_enabled() -> bool:
     _load_runtime_env()
-    if os.getenv("CAMPAIGN_LLM_ENABLED", "true").lower() in {"0", "false", "no"}:
+    if not _llm_enabled():
         return False
     if os.getenv("CAMPAIGN_DEEP_AGENTS_ENABLED", "true").lower() in {"0", "false", "no"}:
         return False
-    return bool(os.getenv("OPENAI_API_KEY"))
+    return True
 
 
 def run_campaign_deep_agent_workflow(
@@ -60,7 +60,7 @@ def run_campaign_deep_agent_workflow(
     typed CampaignPlan before returning it.
     """
     if not deep_agents_enabled():
-        raise RuntimeError("Deep Agents are disabled or OPENAI_API_KEY is missing.")
+        raise RuntimeError("Deep Agents are disabled or the configured LLM provider API key is missing.")
 
     context_id = f"campaign_run_{uuid4().hex}"
     _RUN_CONTEXTS[context_id] = {
@@ -125,14 +125,13 @@ def run_campaign_deep_agent_workflow(
 
 def _create_campaign_deep_agent():
     from deepagents import create_deep_agent
-    from langchain_openai import ChatOpenAI
 
-    model = ChatOpenAI(
-        model=os.getenv("MODEL_NAME", "gpt-4.1-mini"),
+    model = _chat_model(
+        "campaign_deepagents_tool_flow",
         temperature=0.1,
         timeout=45,
         max_retries=1,
-        metadata={"app": "campaign_mvp", "orchestrator": "deepagents_tool_flow"},
+        metadata={"orchestrator": "deepagents_tool_flow"},
     )
     system_prompt = (
         "You are the Campaign Recommendation Deep Agent. You orchestrate a telecom campaign planning workflow by calling tools. "
@@ -343,7 +342,6 @@ def enrich_campaign_plan_with_deep_agent(campaign_plan: CampaignPlan) -> tuple[C
 
 def _run_deep_agent(campaign_plan: CampaignPlan) -> DeepAgentPlanEdits:
     from deepagents import create_deep_agent
-    from langchain_openai import ChatOpenAI
 
     def get_campaign_context() -> str:
         """Return deterministic campaign context: objective, segments, rulebook, offers, ML scores, projections, and draft copy."""
@@ -359,12 +357,12 @@ def _run_deep_agent(campaign_plan: CampaignPlan) -> DeepAgentPlanEdits:
             "Do not claim guaranteed savings or imply urgency that is not in the offer."
         )
 
-    model = ChatOpenAI(
-        model=os.getenv("MODEL_NAME", "gpt-4.1-mini"),
+    model = _chat_model(
+        "campaign_deepagents_enrichment",
         temperature=0.2,
         timeout=30,
         max_retries=1,
-        metadata={"app": "campaign_mvp", "orchestrator": "deepagents"},
+        metadata={"orchestrator": "deepagents"},
     )
     system_prompt = (
         "You are the Campaign Recommendation Deep Agent. Use the available tools before answering. "

@@ -3,6 +3,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.chat_routes import router as chat_router
 from app.api.campaign_routes import router as campaign_router
 from app.api.health_routes import router as health_router
 from app.api.rulebook_routes import router as rulebook_router
@@ -25,3 +26,4 @@ app.add_middleware(
 app.include_router(health_router)
 app.include_router(rulebook_router)
 app.include_router(campaign_router)
+app.include_router(chat_router)

@@ -35,11 +35,12 @@ Open:
 - API docs: http://localhost:8000/docs
 - Streamlit app: the URL printed by Streamlit, usually http://localhost:8501
 
-## OpenAI and LangSmith
+## LLM Provider and LangSmith
 
 Create a local `.env` file from `.env.example` and set:
 
 ```bash
+LLM_PROVIDER=openai
 OPENAI_API_KEY=...
 MODEL_NAME=gpt-4.1-mini
 LANGSMITH_API_KEY=...
@@ -47,7 +48,18 @@ LANGSMITH_TRACING=true
 LANGSMITH_PROJECT=campaign-recommendation-mvp
 ```
 
-When `OPENAI_API_KEY` is present and `CAMPAIGN_LLM_ENABLED` is not false, objective parsing and content draft generation use OpenAI structured outputs through LangChain. When `CAMPAIGN_DEEP_AGENTS_ENABLED` is not false, LangChain Deep Agents enrich the campaign summary, segment explanations, and draft copy after deterministic guardrails run. LangSmith traces are emitted for those LLM and Deep Agent calls when tracing is enabled.
+To use OpenRouter through the OpenAI-compatible API, switch the provider:
+
+```bash
+LLM_PROVIDER=openrouter
+OPENROUTER_API_KEY=...
+OPENROUTER_MODEL_NAME=openai/gpt-4.1-mini
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+OPENROUTER_SITE_URL=http://localhost:3000
+OPENROUTER_APP_NAME=campaign-reco-mvp
+```
+
+When the selected provider has an API key and `CAMPAIGN_LLM_ENABLED` is not false, objective parsing and content draft generation use structured outputs through LangChain. When `CAMPAIGN_DEEP_AGENTS_ENABLED` is not false, LangChain Deep Agents route chat requests and campaign planning tool calls. LangSmith traces are emitted for those LLM and Deep Agent calls when tracing is enabled.
 
 ## Test
 

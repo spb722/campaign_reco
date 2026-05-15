@@ -5,8 +5,16 @@ def test_arpu_projection_uses_deterministic_formula():
     state = run_campaign_workflow("Increase ARPU of mid-ARPU customers by 2% in 30 days")
     projection = state["campaign_plan"].projection
     assert projection.metric == "incremental_revenue"
-    assert projection.formula == "eligible_users x expected_conversion x expected_arpu_lift"
+    assert projection.formula == "eligible_users x expected_conversion x expected_arpu_lift x duration_factor"
     assert projection.total_projected_impact > 0
     first = projection.segment_impacts[0]
-    expected = first["eligible_users"] * first["expected_conversion"] * first["expected_arpu_lift"]
+    expected = first["eligible_users"] * first["expected_conversion"] * first["expected_arpu_lift"] * first["duration_factor"]
     assert first["projected_impact"] == round(expected, 2)
+
+
+def test_arpu_projection_scales_with_duration():
+    thirty_day = run_campaign_workflow("Increase ARPU of mid-ARPU customers by 2% in 30 days")["campaign_plan"].projection
+    forty_five_day = run_campaign_workflow("Increase ARPU of mid-ARPU customers by 2% in 45 days")["campaign_plan"].projection
+
+    assert forty_five_day.segment_impacts[0]["duration_factor"] == 1.5
+    assert forty_five_day.total_projected_impact == round(thirty_day.total_projected_impact * 1.5, 2)

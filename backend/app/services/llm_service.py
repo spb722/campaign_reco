@@ -4,7 +4,7 @@ import os
 import re
 from itertools import count
 from pathlib import Path
-from typing import Literal
+from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
@@ -56,16 +56,16 @@ class StrategyText(BaseModel):
 
 
 def parse_objective(prompt: str, preferred_campaign_type: str | None = None) -> ParsedObjective:
-    """Parse objectives with OpenAI structured output, with deterministic fallback."""
+    """Parse objectives with LLM structured output, with deterministic fallback."""
     _load_runtime_env()
     if _llm_enabled():
         try:
             parsed = _llm_parse_objective(prompt, preferred_campaign_type)
-            parsed.assumptions.append("Objective parsed by OpenAI structured output.")
+            parsed.assumptions.append(f"Objective parsed by {_llm_provider_label()} structured output.")
             return parsed
         except Exception as exc:
             fallback = _heuristic_parse(prompt, preferred_campaign_type)
-            fallback.assumptions.append(f"OpenAI objective parser failed; heuristic fallback used: {exc.__class__.__name__}.")
+            fallback.assumptions.append(f"{_llm_provider_label()} objective parser failed; heuristic fallback used: {exc.__class__.__name__}.")
             return fallback
     return _heuristic_parse(prompt, preferred_campaign_type)
 
@@ -387,20 +387,84 @@ def _apply_copy_instruction(copy: str, user_instruction: str | None) -> str:
     return copy
 
 
-def _chat_model(run_context: str):
+def _chat_model(
+    run_context: str,
+    *,
+    temperature: float = 0.2,
+    timeout: int = 20,
+    max_retries: int = 1,
+    metadata: dict[str, Any] | None = None,
+):
     from langchain_openai import ChatOpenAI
 
-    return ChatOpenAI(
-        model=os.getenv("MODEL_NAME", "gpt-4.1-mini"),
-        temperature=0.2,
-        timeout=20,
-        max_retries=1,
-        metadata={"app": "campaign_mvp", "run_context": run_context},
-    )
+    provider = _llm_provider()
+    model_kwargs: dict[str, Any] = {
+        "model": _llm_model_name(),
+        "api_key": _llm_api_key(),
+        "temperature": temperature,
+        "timeout": timeout,
+        "max_retries": max_retries,
+        "metadata": {
+            "app": "campaign_mvp",
+            "provider": provider,
+            "run_context": run_context,
+            **(metadata or {}),
+        },
+    }
+    base_url = _llm_base_url()
+    if base_url:
+        model_kwargs["base_url"] = base_url
+    headers = _llm_default_headers()
+    if headers:
+        model_kwargs["default_headers"] = headers
+
+    return ChatOpenAI(**model_kwargs)
 
 
 def _llm_enabled() -> bool:
-    return bool(os.getenv("OPENAI_API_KEY")) and os.getenv("CAMPAIGN_LLM_ENABLED", "true").lower() not in {"0", "false", "no"}
+    return bool(_llm_api_key()) and os.getenv("CAMPAIGN_LLM_ENABLED", "true").lower() not in {"0", "false", "no"}
+
+
+def _llm_provider() -> str:
+    provider = os.getenv("LLM_PROVIDER", "openai").strip().lower()
+    if provider in {"openrouter", "openai"}:
+        return provider
+    return "openai"
+
+
+def _llm_provider_label() -> str:
+    return "OpenRouter" if _llm_provider() == "openrouter" else "OpenAI"
+
+
+def _llm_api_key() -> str | None:
+    if _llm_provider() == "openrouter":
+        return os.getenv("OPENROUTER_API_KEY")
+    return os.getenv("OPENAI_API_KEY")
+
+
+def _llm_model_name() -> str:
+    if _llm_provider() == "openrouter":
+        return os.getenv("OPENROUTER_MODEL_NAME") or os.getenv("MODEL_NAME", "openai/gpt-4.1-mini")
+    return os.getenv("MODEL_NAME", "gpt-4.1-mini")
+
+
+def _llm_base_url() -> str | None:
+    if _llm_provider() == "openrouter":
+        return os.getenv("OPENROUTER_BASE_URL") or "https://openrouter.ai/api/v1"
+    return os.getenv("OPENAI_BASE_URL") or None
+
+
+def _llm_default_headers() -> dict[str, str] | None:
+    if _llm_provider() != "openrouter":
+        return None
+    headers: dict[str, str] = {}
+    site_url = os.getenv("OPENROUTER_SITE_URL")
+    app_name = os.getenv("OPENROUTER_APP_NAME")
+    if site_url:
+        headers["HTTP-Referer"] = site_url
+    if app_name:
+        headers["X-Title"] = app_name
+    return headers or None
 
 
 def _load_runtime_env() -> None:
