@@ -52,7 +52,7 @@ def generate_one_pager_pdf(campaign_plan: CampaignPlan) -> str:
                     campaign_plan.target_metric,
                     campaign_plan.target_lift,
                     projected,
-                    f"INR {sum(r.segment.customer_count * r.offer.cost_per_user * r.ml_score.expected_conversion for r in campaign_plan.recommended_segments):,.0f}",
+                    f"OMR {sum(r.segment.customer_count * r.offer.cost_per_user * r.ml_score.expected_conversion for r in campaign_plan.recommended_segments):,.0f}",
                 ],
             ],
             colWidths=[145, 145, 145, 145, 145],

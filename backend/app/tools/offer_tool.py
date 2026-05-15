@@ -11,6 +11,10 @@ def _split(value: str) -> list[str]:
     return [item.strip() for item in value.split("|") if item.strip()]
 
 
+def _norm(value: str) -> str:
+    return value.lower().replace("'", "").replace("_", " ").strip()
+
+
 def load_offer_catalog() -> list[Offer]:
     path = data_dir() / "offer_catalog.csv"
     with path.open(newline="", encoding="utf-8") as handle:
@@ -49,9 +53,11 @@ def get_offer_candidates(segments: list[Segment], parsed_objective: ParsedObject
                 intent_match = True
             if not intent_match:
                 continue
-            if segment.data_usage_segment not in offer.eligible_usage_segment:
+            if _norm(segment.data_usage_segment) not in {_norm(value) for value in offer.eligible_usage_segment}:
                 continue
-            if segment.rfm_segment not in offer.eligible_rfm_segment:
+            eligible_rfm = {_norm(value) for value in offer.eligible_rfm_segment}
+            segment_rfm = _norm(segment.rfm_segment)
+            if segment_rfm not in eligible_rfm and f"{segment_rfm}s" not in eligible_rfm:
                 continue
             matching.append(offer)
         if not matching:

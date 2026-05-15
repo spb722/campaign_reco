@@ -18,11 +18,11 @@ def estimate_campaign_impact(campaign_plan: CampaignPlan) -> Projection:
 
     if intent in {"increase_arpu", "upsell", "cross_sell", "recommend_best_campaign"}:
         formula = "eligible_users x expected_conversion x expected_arpu_lift"
-        unit = "INR"
+        unit = "OMR"
         metric = "incremental_revenue"
         for rec in campaign_plan.recommended_segments:
             conversion = rec.ml_score.expected_conversion or assumptions["arpu"]["default_conversion"]
-            lift = rec.offer.estimated_arpu_lift or assumptions["arpu"]["default_lift_rupees"]
+            lift = rec.offer.estimated_arpu_lift or assumptions["arpu"].get("default_lift_omr", 3.5)
             impact = rec.segment.customer_count * conversion * lift
             total += impact
             segment_impacts.append(

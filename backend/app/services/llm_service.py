@@ -34,7 +34,7 @@ class ObjectiveLLMResult(BaseModel):
     target_segment_hint: str | None = None
     target_metric: str
     target_lift_value: float | None = None
-    target_lift_unit: Literal["percent", "rupees", "absolute", "gb", "customers"] | None = None
+    target_lift_unit: Literal["percent", "omr", "absolute", "gb", "customers"] | None = None
     time_window_value: int | None = None
     time_window_unit: Literal["days", "weeks", "months", "quarter"] | None = None
     business_context: str = "prepaid"
@@ -351,7 +351,7 @@ def _template_content_drafts(
 ) -> list[ContentDraft]:
     drafts = []
     channel_templates = {
-        "sms": f"{offer.benefit} with {offer.offer_name} for INR {offer.price:.0f}. Valid {offer.validity_days} days. Activate now.",
+        "sms": f"{offer.benefit} with {offer.offer_name} for OMR {offer.price:.3g}. Valid {offer.validity_days} days. Activate now.",
         "whatsapp": f"Your usage pattern qualifies for {offer.offer_name}: {offer.benefit}. Reply YES to view details before activation.",
         "push": f"{offer.offer_name}: {offer.benefit} for {offer.validity_days} days.",
         "email": f"Based on your recent usage, {offer.offer_name} gives you {offer.benefit}. Review the plan details before activating.",

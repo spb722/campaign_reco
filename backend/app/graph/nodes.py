@@ -177,6 +177,10 @@ def prepare_ui_response_node(state: CampaignGraphState) -> dict:
 
 
 def _best_rule_for_segment(segment: Segment, rules: list[RulebookMatch]) -> RulebookMatch:
+    if segment.opportunity:
+        for rule in rules:
+            if rule.typical_action == segment.opportunity and rule.trend in {segment.data_usage_trend, segment.voice_usage_trend}:
+                return rule
     for trend in (segment.data_usage_trend, segment.voice_usage_trend):
         for rule in rules:
             if rule.trend == trend:

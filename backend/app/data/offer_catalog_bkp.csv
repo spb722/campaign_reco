@@ -1,0 +1,9 @@
+offer_id,offer_name,offer_type,campaign_intent,price,benefit,validity_days,eligible_usage_segment,eligible_rfm_segment,estimated_arpu_lift,estimated_data_lift_gb,estimated_save_rate,cost_per_user,margin_impact,description
+O001,20GB Data Booster,data_addon,increase_arpu,149,20GB extra data,30,high|medium,Loyal Customers|Potential Loyalists|Champions,35,5,0.00,12,positive,Add-on pack for data-heavy users with clear incremental revenue.
+O002,Weekend Stream Pack,night_data_bonus,increase_data_usage,99,Unlimited weekend night data,7,low|medium|high,Loyal Customers|Potential Loyalists|Champions,18,3,0.00,8,positive,Short validity booster to increase data usage frequency.
+O003,Stay Connected Saver,retention_discount,reduce_churn,49,Discount on next recharge,14,low|medium,At Risk|About to Sleep|Hibernating,10,1,0.06,18,neutral,Retention nudge for declining users with high churn risk.
+O004,Welcome Back Bonus,reactivation_bonus,reactivate_inactive,0,1GB and 20 minutes on recharge,7,low,Hibernating|About to Sleep|Lost,8,1,0.04,10,neutral,Light reactivation offer for inactive prepaid users.
+O005,Premium OTT Combo,ott_bundle,upsell,299,OTT subscription plus 30GB data,30,high,Champions|Loyal Customers,80,8,0.00,35,positive,Premium bundle for high-value users showing strong growth.
+O006,Voice Plus Data Combo,combo_pack,cross_sell,199,10GB data and 500 voice minutes,30,low|medium,Loyal Customers|Potential Loyalists,42,4,0.00,20,positive,Cross-sell combo for users underusing one service.
+O007,Seven Day Activity Streak,weekday_booster,increase_activity,29,Daily bonus for active usage streak,7,low|medium,About to Sleep|Hibernating|At Risk,6,1,0.02,6,neutral,Low-cost engagement booster to lift activity.
+O008,Premium Protect Bundle,loyalty_pack,recommend_best_campaign,399,High value loyalty bundle and support callback,30,high,Champions,65,6,0.00,28,positive,Protect-value bundle for rapid expansion users without discounting.

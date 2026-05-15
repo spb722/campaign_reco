@@ -22,6 +22,12 @@ class Segment(BaseModel):
     current_pack_type: str
     offer_affinity: str
     business_context: str
+    campaign_family: str | None = None
+    campaign_intent: str | None = None
+    customer_signal: str | None = None
+    customer_meaning: str | None = None
+    opportunity: str | None = None
+    nbo_action: str | None = None
 
 
 class RulebookMatch(BaseModel):

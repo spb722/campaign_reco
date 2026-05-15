@@ -1,98 +1,2016 @@
 [
   {
-    "segment_id": "S001",
-    "channel_scores": {"sms": 0.65, "whatsapp": 0.72, "push": 0.81, "email": 0.34, "ivr": 0.20, "outbound_call": 0.18},
+    "segment_id": "Seg-4852",
+    "channel_scores": {
+      "sms": 0.57,
+      "whatsapp": 0.71,
+      "push": 0.74,
+      "email": 0.44,
+      "ivr": 0.16,
+      "outbound_call": 0.24
+    },
     "best_channel": "push",
     "secondary_channel": "whatsapp",
-    "best_time_window": "18:00-21:00",
-    "expected_ctr": 0.18,
-    "expected_conversion": 0.08,
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.091,
+    "expected_conversion": 0.053,
     "fatigue_risk": "medium",
-    "offer_affinity": "data_addon",
-    "model_confidence": 0.83
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.88
   },
   {
-    "segment_id": "S002",
-    "channel_scores": {"sms": 0.76, "whatsapp": 0.69, "push": 0.45, "email": 0.21, "ivr": 0.42, "outbound_call": 0.58},
+    "segment_id": "Seg-10879",
+    "channel_scores": {
+      "sms": 0.74,
+      "whatsapp": 0.75,
+      "push": 0.63,
+      "email": 0.32,
+      "ivr": 0.32,
+      "outbound_call": 0.25
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.089,
+    "expected_conversion": 0.057,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-10781",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.75,
+      "push": 0.67,
+      "email": 0.34,
+      "ivr": 0.19,
+      "outbound_call": 0.24
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.104,
+    "expected_conversion": 0.052,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-10830",
+    "channel_scores": {
+      "sms": 0.68,
+      "whatsapp": 0.7,
+      "push": 0.71,
+      "email": 0.35,
+      "ivr": 0.23,
+      "outbound_call": 0.21
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.102,
+    "expected_conversion": 0.049,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-10928",
+    "channel_scores": {
+      "sms": 0.78,
+      "whatsapp": 0.74,
+      "push": 0.58,
+      "email": 0.38,
+      "ivr": 0.29,
+      "outbound_call": 0.28
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.099,
+    "expected_conversion": 0.05,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-4656",
+    "channel_scores": {
+      "sms": 0.55,
+      "whatsapp": 0.8,
+      "push": 0.86,
+      "email": 0.49,
+      "ivr": 0.15,
+      "outbound_call": 0.1
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.119,
+    "expected_conversion": 0.06,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-9997",
+    "channel_scores": {
+      "sms": 0.69,
+      "whatsapp": 0.69,
+      "push": 0.69,
+      "email": 0.37,
+      "ivr": 0.19,
+      "outbound_call": 0.21
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.088,
+    "expected_conversion": 0.056,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-9801",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.72,
+      "push": 0.71,
+      "email": 0.32,
+      "ivr": 0.24,
+      "outbound_call": 0.23
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.101,
+    "expected_conversion": 0.052,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-4362",
+    "channel_scores": {
+      "sms": 0.52,
+      "whatsapp": 0.89,
+      "push": 0.92,
+      "email": 0.49,
+      "ivr": 0.11,
+      "outbound_call": 0.08
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.113,
+    "expected_conversion": 0.061,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4264",
+    "channel_scores": {
+      "sms": 0.58,
+      "whatsapp": 0.82,
+      "push": 0.87,
+      "email": 0.48,
+      "ivr": 0.14,
+      "outbound_call": 0.08
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.118,
+    "expected_conversion": 0.064,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4166",
+    "channel_scores": {
+      "sms": 0.52,
+      "whatsapp": 0.87,
+      "push": 0.95,
+      "email": 0.42,
+      "ivr": 0.12,
+      "outbound_call": 0.15
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.123,
+    "expected_conversion": 0.062,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4215",
+    "channel_scores": {
+      "sms": 0.59,
+      "whatsapp": 0.78,
+      "push": 0.81,
+      "email": 0.43,
+      "ivr": 0.19,
+      "outbound_call": 0.11
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.125,
+    "expected_conversion": 0.074,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4313",
+    "channel_scores": {
+      "sms": 0.54,
+      "whatsapp": 0.84,
+      "push": 0.9,
+      "email": 0.53,
+      "ivr": 0.13,
+      "outbound_call": 0.13
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.125,
+    "expected_conversion": 0.068,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-3872",
+    "channel_scores": {
+      "sms": 0.58,
+      "whatsapp": 0.77,
+      "push": 0.85,
+      "email": 0.47,
+      "ivr": 0.14,
+      "outbound_call": 0.12
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.119,
+    "expected_conversion": 0.066,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-3774",
+    "channel_scores": {
+      "sms": 0.57,
+      "whatsapp": 0.78,
+      "push": 0.81,
+      "email": 0.47,
+      "ivr": 0.23,
+      "outbound_call": 0.15
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.121,
+    "expected_conversion": 0.069,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-10977",
+    "channel_scores": {
+      "sms": 0.77,
+      "whatsapp": 0.69,
+      "push": 0.54,
+      "email": 0.35,
+      "ivr": 0.22,
+      "outbound_call": 0.25
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.052,
+    "expected_conversion": 0.025,
+    "fatigue_risk": "medium",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-7549",
+    "channel_scores": {
+      "sms": 0.7,
+      "whatsapp": 0.38,
+      "push": 0.21,
+      "email": 0.12,
+      "ivr": 0.48,
+      "outbound_call": 0.64
+    },
     "best_channel": "sms",
     "secondary_channel": "outbound_call",
     "best_time_window": "11:00-14:00",
-    "expected_ctr": 0.13,
-    "expected_conversion": 0.05,
+    "expected_ctr": 0.021,
+    "expected_conversion": 0.011,
     "fatigue_risk": "high",
-    "offer_affinity": "retention_pack",
-    "model_confidence": 0.79
-  },
-  {
-    "segment_id": "S003",
-    "channel_scores": {"sms": 0.71, "whatsapp": 0.54, "push": 0.2, "email": 0.16, "ivr": 0.51, "outbound_call": 0.36},
-    "best_channel": "sms",
-    "secondary_channel": "ivr",
-    "best_time_window": "10:00-13:00",
-    "expected_ctr": 0.09,
-    "expected_conversion": 0.06,
-    "fatigue_risk": "medium",
     "offer_affinity": "reactivation_bonus",
-    "model_confidence": 0.74
+    "model_confidence": 0.76
   },
   {
-    "segment_id": "S004",
-    "channel_scores": {"sms": 0.44, "whatsapp": 0.78, "push": 0.86, "email": 0.39, "ivr": 0.14, "outbound_call": 0.11},
+    "segment_id": "Seg-8529",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.32,
+      "push": 0.06,
+      "email": 0.15,
+      "ivr": 0.51,
+      "outbound_call": 0.69
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.021,
+    "expected_conversion": 0.01,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-8431",
+    "channel_scores": {
+      "sms": 0.77,
+      "whatsapp": 0.38,
+      "push": 0.06,
+      "email": 0.14,
+      "ivr": 0.57,
+      "outbound_call": 0.71
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.02,
+    "expected_conversion": 0.01,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-8333",
+    "channel_scores": {
+      "sms": 0.68,
+      "whatsapp": 0.39,
+      "push": 0.16,
+      "email": 0.15,
+      "ivr": 0.51,
+      "outbound_call": 0.6
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.021,
+    "expected_conversion": 0.01,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-8382",
+    "channel_scores": {
+      "sms": 0.69,
+      "whatsapp": 0.35,
+      "push": 0.17,
+      "email": 0.12,
+      "ivr": 0.48,
+      "outbound_call": 0.62
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.02,
+    "expected_conversion": 0.01,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-8480",
+    "channel_scores": {
+      "sms": 0.77,
+      "whatsapp": 0.38,
+      "push": 0.09,
+      "email": 0.12,
+      "ivr": 0.55,
+      "outbound_call": 0.72
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.02,
+    "expected_conversion": 0.01,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-7353",
+    "channel_scores": {
+      "sms": 0.74,
+      "whatsapp": 0.41,
+      "push": 0.15,
+      "email": 0.08,
+      "ivr": 0.5,
+      "outbound_call": 0.59
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.02,
+    "expected_conversion": 0.01,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-1182",
+    "channel_scores": {
+      "sms": 0.82,
+      "whatsapp": 0.48,
+      "push": 0.22,
+      "email": 0.16,
+      "ivr": 0.46,
+      "outbound_call": 0.64
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.026,
+    "expected_conversion": 0.014,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-1084",
+    "channel_scores": {
+      "sms": 0.79,
+      "whatsapp": 0.51,
+      "push": 0.21,
+      "email": 0.21,
+      "ivr": 0.5,
+      "outbound_call": 0.67
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.03,
+    "expected_conversion": 0.013,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-4757",
+    "channel_scores": {
+      "sms": 0.6,
+      "whatsapp": 0.82,
+      "push": 0.74,
+      "email": 0.42,
+      "ivr": 0.22,
+      "outbound_call": 0.18
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "push",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.175,
+    "expected_conversion": 0.101,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4806",
+    "channel_scores": {
+      "sms": 0.6,
+      "whatsapp": 0.79,
+      "push": 0.73,
+      "email": 0.47,
+      "ivr": 0.2,
+      "outbound_call": 0.17
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "push",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.18,
+    "expected_conversion": 0.088,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4708",
+    "channel_scores": {
+      "sms": 0.57,
+      "whatsapp": 0.82,
+      "push": 0.87,
+      "email": 0.49,
+      "ivr": 0.14,
+      "outbound_call": 0.08
+    },
     "best_channel": "push",
     "secondary_channel": "whatsapp",
-    "best_time_window": "19:00-22:00",
-    "expected_ctr": 0.2,
-    "expected_conversion": 0.1,
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.199,
+    "expected_conversion": 0.091,
     "fatigue_risk": "low",
-    "offer_affinity": "ott_bundle",
-    "model_confidence": 0.86
+    "offer_affinity": "combo_pack",
+    "model_confidence": 0.88
   },
   {
-    "segment_id": "S005",
-    "channel_scores": {"sms": 0.58, "whatsapp": 0.77, "push": 0.69, "email": 0.3, "ivr": 0.18, "outbound_call": 0.2},
+    "segment_id": "Seg-3777",
+    "channel_scores": {
+      "sms": 0.64,
+      "whatsapp": 0.76,
+      "push": 0.81,
+      "email": 0.47,
+      "ivr": 0.26,
+      "outbound_call": 0.18
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.209,
+    "expected_conversion": 0.097,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-3826",
+    "channel_scores": {
+      "sms": 0.62,
+      "whatsapp": 0.81,
+      "push": 0.78,
+      "email": 0.47,
+      "ivr": 0.25,
+      "outbound_call": 0.14
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "push",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.189,
+    "expected_conversion": 0.095,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-7403",
+    "channel_scores": {
+      "sms": 0.68,
+      "whatsapp": 0.38,
+      "push": 0.15,
+      "email": 0.14,
+      "ivr": 0.47,
+      "outbound_call": 0.61
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.048,
+    "expected_conversion": 0.025,
+    "fatigue_risk": "high",
+    "offer_affinity": "combo_pack",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-1915",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.64,
+      "push": 0.44,
+      "email": 0.19,
+      "ivr": 0.36,
+      "outbound_call": 0.56
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.09,
+    "expected_conversion": 0.044,
+    "fatigue_risk": "high",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.82
+  },
+  {
+    "segment_id": "Seg-2160",
+    "channel_scores": {
+      "sms": 0.77,
+      "whatsapp": 0.59,
+      "push": 0.43,
+      "email": 0.24,
+      "ivr": 0.35,
+      "outbound_call": 0.54
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.077,
+    "expected_conversion": 0.04,
+    "fatigue_risk": "high",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.85
+  },
+  {
+    "segment_id": "Seg-5820",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.64,
+      "push": 0.53,
+      "email": 0.21,
+      "ivr": 0.28,
+      "outbound_call": 0.41
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.121,
+    "expected_conversion": 0.058,
+    "fatigue_risk": "medium",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.84
+  },
+  {
+    "segment_id": "Seg-5624",
+    "channel_scores": {
+      "sms": 0.69,
+      "whatsapp": 0.66,
+      "push": 0.56,
+      "email": 0.26,
+      "ivr": 0.29,
+      "outbound_call": 0.43
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.131,
+    "expected_conversion": 0.059,
+    "fatigue_risk": "medium",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.84
+  },
+  {
+    "segment_id": "Seg-8434",
+    "channel_scores": {
+      "sms": 0.74,
+      "whatsapp": 0.41,
+      "push": 0.13,
+      "email": 0.12,
+      "ivr": 0.54,
+      "outbound_call": 0.69
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.055,
+    "expected_conversion": 0.024,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-8336",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.41,
+      "push": 0.15,
+      "email": 0.1,
+      "ivr": 0.48,
+      "outbound_call": 0.62
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.052,
+    "expected_conversion": 0.026,
+    "fatigue_risk": "high",
+    "offer_affinity": "combo_pack",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-8385",
+    "channel_scores": {
+      "sms": 0.74,
+      "whatsapp": 0.39,
+      "push": 0.17,
+      "email": 0.14,
+      "ivr": 0.51,
+      "outbound_call": 0.66
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.046,
+    "expected_conversion": 0.023,
+    "fatigue_risk": "high",
+    "offer_affinity": "combo_pack",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-7552",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.36,
+      "push": 0.22,
+      "email": 0.1,
+      "ivr": 0.49,
+      "outbound_call": 0.6
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.053,
+    "expected_conversion": 0.025,
+    "fatigue_risk": "high",
+    "offer_affinity": "combo_pack",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-7452",
+    "channel_scores": {
+      "sms": 0.8,
+      "whatsapp": 0.35,
+      "push": 0.07,
+      "email": 0.14,
+      "ivr": 0.59,
+      "outbound_call": 0.66
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.056,
+    "expected_conversion": 0.026,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-4610",
+    "channel_scores": {
+      "sms": 0.48,
+      "whatsapp": 0.88,
+      "push": 0.95,
+      "email": 0.45,
+      "ivr": 0.1,
+      "outbound_call": 0.08
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.147,
+    "expected_conversion": 0.079,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4365",
+    "channel_scores": {
+      "sms": 0.53,
+      "whatsapp": 0.82,
+      "push": 0.94,
+      "email": 0.44,
+      "ivr": 0.11,
+      "outbound_call": 0.08
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.176,
+    "expected_conversion": 0.083,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-10292",
+    "channel_scores": {
+      "sms": 0.66,
+      "whatsapp": 0.81,
+      "push": 0.78,
+      "email": 0.38,
+      "ivr": 0.2,
+      "outbound_call": 0.17
+    },
     "best_channel": "whatsapp",
     "secondary_channel": "push",
     "best_time_window": "17:00-20:00",
-    "expected_ctr": 0.16,
-    "expected_conversion": 0.075,
+    "expected_ctr": 0.132,
+    "expected_conversion": 0.064,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-3728",
+    "channel_scores": {
+      "sms": 0.56,
+      "whatsapp": 0.77,
+      "push": 0.87,
+      "email": 0.42,
+      "ivr": 0.16,
+      "outbound_call": 0.16
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.185,
+    "expected_conversion": 0.092,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4120",
+    "channel_scores": {
+      "sms": 0.59,
+      "whatsapp": 0.82,
+      "push": 0.89,
+      "email": 0.49,
+      "ivr": 0.15,
+      "outbound_call": 0.11
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.158,
+    "expected_conversion": 0.087,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-10341",
+    "channel_scores": {
+      "sms": 0.7,
+      "whatsapp": 0.73,
+      "push": 0.68,
+      "email": 0.37,
+      "ivr": 0.24,
+      "outbound_call": 0.18
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.134,
+    "expected_conversion": 0.063,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-3924",
+    "channel_scores": {
+      "sms": 0.52,
+      "whatsapp": 0.77,
+      "push": 0.83,
+      "email": 0.42,
+      "ivr": 0.13,
+      "outbound_call": 0.12
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.179,
+    "expected_conversion": 0.078,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-8039",
+    "channel_scores": {
+      "sms": 0.66,
+      "whatsapp": 0.48,
+      "push": 0.24,
+      "email": 0.11,
+      "ivr": 0.48,
+      "outbound_call": 0.66
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.046,
+    "expected_conversion": 0.022,
+    "fatigue_risk": "high",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-7843",
+    "channel_scores": {
+      "sms": 0.64,
+      "whatsapp": 0.42,
+      "push": 0.24,
+      "email": 0.09,
+      "ivr": 0.42,
+      "outbound_call": 0.67
+    },
+    "best_channel": "outbound_call",
+    "secondary_channel": "sms",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.047,
+    "expected_conversion": 0.021,
+    "fatigue_risk": "high",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.71
+  },
+  {
+    "segment_id": "Seg-7892",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.41,
+      "push": 0.15,
+      "email": 0.12,
+      "ivr": 0.49,
+      "outbound_call": 0.64
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "17:00-20:00",
+    "expected_ctr": 0.045,
+    "expected_conversion": 0.022,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.76
+  },
+  {
+    "segment_id": "Seg-10488",
+    "channel_scores": {
+      "sms": 0.65,
+      "whatsapp": 0.78,
+      "push": 0.78,
+      "email": 0.38,
+      "ivr": 0.18,
+      "outbound_call": 0.18
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "push",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.087,
+    "expected_conversion": 0.045,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-10733",
+    "channel_scores": {
+      "sms": 0.65,
+      "whatsapp": 0.76,
+      "push": 0.77,
+      "email": 0.35,
+      "ivr": 0.19,
+      "outbound_call": 0.22
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.096,
+    "expected_conversion": 0.044,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-1080",
+    "channel_scores": {
+      "sms": 0.86,
+      "whatsapp": 0.48,
+      "push": 0.25,
+      "email": 0.15,
+      "ivr": 0.53,
+      "outbound_call": 0.62
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.041,
+    "expected_conversion": 0.019,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-982",
+    "channel_scores": {
+      "sms": 0.76,
+      "whatsapp": 0.49,
+      "push": 0.28,
+      "email": 0.18,
+      "ivr": 0.45,
+      "outbound_call": 0.53
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.035,
+    "expected_conversion": 0.019,
+    "fatigue_risk": "high",
+    "offer_affinity": "starter_pack",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-1031",
+    "channel_scores": {
+      "sms": 0.78,
+      "whatsapp": 0.47,
+      "push": 0.34,
+      "email": 0.16,
+      "ivr": 0.46,
+      "outbound_call": 0.61
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.039,
+    "expected_conversion": 0.02,
+    "fatigue_risk": "high",
+    "offer_affinity": "starter_pack",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-198",
+    "channel_scores": {
+      "sms": 0.81,
+      "whatsapp": 0.48,
+      "push": 0.33,
+      "email": 0.18,
+      "ivr": 0.46,
+      "outbound_call": 0.53
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.036,
+    "expected_conversion": 0.021,
+    "fatigue_risk": "high",
+    "offer_affinity": "starter_pack",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-2",
+    "channel_scores": {
+      "sms": 0.76,
+      "whatsapp": 0.47,
+      "push": 0.31,
+      "email": 0.19,
+      "ivr": 0.43,
+      "outbound_call": 0.59
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.044,
+    "expected_conversion": 0.02,
+    "fatigue_risk": "high",
+    "offer_affinity": "starter_pack",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-51",
+    "channel_scores": {
+      "sms": 0.75,
+      "whatsapp": 0.47,
+      "push": 0.3,
+      "email": 0.2,
+      "ivr": 0.46,
+      "outbound_call": 0.53
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "09:00-12:00",
+    "expected_ctr": 0.047,
+    "expected_conversion": 0.02,
+    "fatigue_risk": "high",
+    "offer_affinity": "starter_pack",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-1179",
+    "channel_scores": {
+      "sms": 0.79,
+      "whatsapp": 0.48,
+      "push": 0.21,
+      "email": 0.18,
+      "ivr": 0.43,
+      "outbound_call": 0.64
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "14:00-17:00",
+    "expected_ctr": 0.049,
+    "expected_conversion": 0.024,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-1081",
+    "channel_scores": {
+      "sms": 0.85,
+      "whatsapp": 0.5,
+      "push": 0.25,
+      "email": 0.21,
+      "ivr": 0.51,
+      "outbound_call": 0.6
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "14:00-17:00",
+    "expected_ctr": 0.048,
+    "expected_conversion": 0.023,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-983",
+    "channel_scores": {
+      "sms": 0.75,
+      "whatsapp": 0.53,
+      "push": 0.33,
+      "email": 0.19,
+      "ivr": 0.43,
+      "outbound_call": 0.58
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "14:00-17:00",
+    "expected_ctr": 0.052,
+    "expected_conversion": 0.025,
+    "fatigue_risk": "high",
+    "offer_affinity": "weekday_booster",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-1032",
+    "channel_scores": {
+      "sms": 0.79,
+      "whatsapp": 0.51,
+      "push": 0.32,
+      "email": 0.17,
+      "ivr": 0.47,
+      "outbound_call": 0.57
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "14:00-17:00",
+    "expected_ctr": 0.051,
+    "expected_conversion": 0.022,
+    "fatigue_risk": "high",
+    "offer_affinity": "weekday_booster",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-689",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.55,
+      "push": 0.42,
+      "email": 0.2,
+      "ivr": 0.39,
+      "outbound_call": 0.54
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "14:00-17:00",
+    "expected_ctr": 0.05,
+    "expected_conversion": 0.027,
+    "fatigue_risk": "high",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-591",
+    "channel_scores": {
+      "sms": 0.75,
+      "whatsapp": 0.52,
+      "push": 0.39,
+      "email": 0.21,
+      "ivr": 0.45,
+      "outbound_call": 0.58
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "14:00-17:00",
+    "expected_ctr": 0.049,
+    "expected_conversion": 0.024,
+    "fatigue_risk": "high",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-493",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.6,
+      "push": 0.43,
+      "email": 0.21,
+      "ivr": 0.39,
+      "outbound_call": 0.54
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "14:00-17:00",
+    "expected_ctr": 0.055,
+    "expected_conversion": 0.025,
+    "fatigue_risk": "high",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-2408",
+    "channel_scores": {
+      "sms": 0.84,
+      "whatsapp": 0.51,
+      "push": 0.28,
+      "email": 0.17,
+      "ivr": 0.39,
+      "outbound_call": 0.63
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "10:00-18:00",
+    "expected_ctr": 0.027,
+    "expected_conversion": 0.014,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.82
+  },
+  {
+    "segment_id": "Seg-6068",
+    "channel_scores": {
+      "sms": 0.81,
+      "whatsapp": 0.57,
+      "push": 0.37,
+      "email": 0.26,
+      "ivr": 0.36,
+      "outbound_call": 0.57
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-18:00",
+    "expected_ctr": 0.036,
+    "expected_conversion": 0.015,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.81
+  },
+  {
+    "segment_id": "Seg-2310",
+    "channel_scores": {
+      "sms": 0.86,
+      "whatsapp": 0.58,
+      "push": 0.28,
+      "email": 0.24,
+      "ivr": 0.54,
+      "outbound_call": 0.64
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "10:00-18:00",
+    "expected_ctr": 0.031,
+    "expected_conversion": 0.016,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.82
+  },
+  {
+    "segment_id": "Seg-2212",
+    "channel_scores": {
+      "sms": 0.81,
+      "whatsapp": 0.56,
+      "push": 0.39,
+      "email": 0.23,
+      "ivr": 0.45,
+      "outbound_call": 0.52
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-18:00",
+    "expected_ctr": 0.031,
+    "expected_conversion": 0.016,
+    "fatigue_risk": "high",
+    "offer_affinity": "default",
+    "model_confidence": 0.82
+  },
+  {
+    "segment_id": "Seg-2261",
+    "channel_scores": {
+      "sms": 0.83,
+      "whatsapp": 0.53,
+      "push": 0.4,
+      "email": 0.19,
+      "ivr": 0.44,
+      "outbound_call": 0.52
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-18:00",
+    "expected_ctr": 0.031,
+    "expected_conversion": 0.013,
+    "fatigue_risk": "high",
+    "offer_affinity": "default",
+    "model_confidence": 0.82
+  },
+  {
+    "segment_id": "Seg-4658",
+    "channel_scores": {
+      "sms": 0.57,
+      "whatsapp": 0.78,
+      "push": 0.86,
+      "email": 0.43,
+      "ivr": 0.17,
+      "outbound_call": 0.08
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.169,
+    "expected_conversion": 0.08,
+    "fatigue_risk": "low",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4854",
+    "channel_scores": {
+      "sms": 0.6,
+      "whatsapp": 0.77,
+      "push": 0.77,
+      "email": 0.47,
+      "ivr": 0.12,
+      "outbound_call": 0.21
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "push",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.151,
+    "expected_conversion": 0.082,
+    "fatigue_risk": "medium",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4560",
+    "channel_scores": {
+      "sms": 0.53,
+      "whatsapp": 0.87,
+      "push": 0.92,
+      "email": 0.49,
+      "ivr": 0.18,
+      "outbound_call": 0.15
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.205,
+    "expected_conversion": 0.095,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4266",
+    "channel_scores": {
+      "sms": 0.55,
+      "whatsapp": 0.86,
+      "push": 0.86,
+      "email": 0.46,
+      "ivr": 0.11,
+      "outbound_call": 0.1
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "push",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.21,
+    "expected_conversion": 0.099,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-3874",
+    "channel_scores": {
+      "sms": 0.55,
+      "whatsapp": 0.81,
+      "push": 0.84,
+      "email": 0.42,
+      "ivr": 0.14,
+      "outbound_call": 0.13
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.176,
+    "expected_conversion": 0.089,
+    "fatigue_risk": "low",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-3678",
+    "channel_scores": {
+      "sms": 0.54,
+      "whatsapp": 0.78,
+      "push": 0.86,
+      "email": 0.42,
+      "ivr": 0.11,
+      "outbound_call": 0.12
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.191,
+    "expected_conversion": 0.089,
+    "fatigue_risk": "low",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4217",
+    "channel_scores": {
+      "sms": 0.55,
+      "whatsapp": 0.77,
+      "push": 0.87,
+      "email": 0.46,
+      "ivr": 0.15,
+      "outbound_call": 0.12
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.204,
+    "expected_conversion": 0.088,
+    "fatigue_risk": "low",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-4511",
+    "channel_scores": {
+      "sms": 0.55,
+      "whatsapp": 0.84,
+      "push": 0.94,
+      "email": 0.49,
+      "ivr": 0.14,
+      "outbound_call": 0.12
+    },
+    "best_channel": "push",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.187,
+    "expected_conversion": 0.098,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.88
+  },
+  {
+    "segment_id": "Seg-10146",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.68,
+      "push": 0.64,
+      "email": 0.33,
+      "ivr": 0.2,
+      "outbound_call": 0.23
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.168,
+    "expected_conversion": 0.078,
+    "fatigue_risk": "low",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-10097",
+    "channel_scores": {
+      "sms": 0.69,
+      "whatsapp": 0.71,
+      "push": 0.68,
+      "email": 0.32,
+      "ivr": 0.21,
+      "outbound_call": 0.21
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.167,
+    "expected_conversion": 0.074,
+    "fatigue_risk": "low",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-9901",
+    "channel_scores": {
+      "sms": 0.73,
+      "whatsapp": 0.7,
+      "push": 0.57,
+      "email": 0.38,
+      "ivr": 0.32,
+      "outbound_call": 0.25
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.174,
+    "expected_conversion": 0.076,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-9852",
+    "channel_scores": {
+      "sms": 0.69,
+      "whatsapp": 0.75,
+      "push": 0.64,
+      "email": 0.37,
+      "ivr": 0.23,
+      "outbound_call": 0.16
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "18:00-21:00",
+    "expected_ctr": 0.165,
+    "expected_conversion": 0.067,
+    "fatigue_risk": "low",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.87
+  },
+  {
+    "segment_id": "Seg-5209",
+    "channel_scores": {
+      "sms": 0.77,
+      "whatsapp": 0.62,
+      "push": 0.43,
+      "email": 0.28,
+      "ivr": 0.31,
+      "outbound_call": 0.44
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.077,
+    "expected_conversion": 0.036,
+    "fatigue_risk": "medium",
+    "offer_affinity": "retention_discount",
+    "model_confidence": 0.81
+  },
+  {
+    "segment_id": "Seg-11614",
+    "channel_scores": {
+      "sms": 0.69,
+      "whatsapp": 0.72,
+      "push": 0.66,
+      "email": 0.33,
+      "ivr": 0.28,
+      "outbound_call": 0.22
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.083,
+    "expected_conversion": 0.042,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-11516",
+    "channel_scores": {
+      "sms": 0.61,
+      "whatsapp": 0.77,
+      "push": 0.66,
+      "email": 0.27,
+      "ivr": 0.16,
+      "outbound_call": 0.24
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "push",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.086,
+    "expected_conversion": 0.038,
+    "fatigue_risk": "low",
+    "offer_affinity": "data_addon",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-11663",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.74,
+      "push": 0.62,
+      "email": 0.33,
+      "ivr": 0.28,
+      "outbound_call": 0.22
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.08,
+    "expected_conversion": 0.037,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-11383",
+    "channel_scores": {
+      "sms": 0.72,
+      "whatsapp": 0.65,
+      "push": 0.58,
+      "email": 0.33,
+      "ivr": 0.25,
+      "outbound_call": 0.25
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.079,
+    "expected_conversion": 0.04,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_discount",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-11432",
+    "channel_scores": {
+      "sms": 0.69,
+      "whatsapp": 0.66,
+      "push": 0.63,
+      "email": 0.33,
+      "ivr": 0.22,
+      "outbound_call": 0.23
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-13:00",
+    "expected_ctr": 0.074,
+    "expected_conversion": 0.042,
+    "fatigue_risk": "low",
+    "offer_affinity": "retention_discount",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-11994",
+    "channel_scores": {
+      "sms": 0.67,
+      "whatsapp": 0.68,
+      "push": 0.61,
+      "email": 0.33,
+      "ivr": 0.22,
+      "outbound_call": 0.25
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "19:00-22:00",
+    "expected_ctr": 0.1,
+    "expected_conversion": 0.058,
+    "fatigue_risk": "medium",
+    "offer_affinity": "premium_data",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-12100",
+    "channel_scores": {
+      "sms": 0.75,
+      "whatsapp": 0.67,
+      "push": 0.54,
+      "email": 0.27,
+      "ivr": 0.29,
+      "outbound_call": 0.26
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "19:00-22:00",
+    "expected_ctr": 0.097,
+    "expected_conversion": 0.055,
+    "fatigue_risk": "medium",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-12149",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.68,
+      "push": 0.5,
+      "email": 0.32,
+      "ivr": 0.33,
+      "outbound_call": 0.3
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "19:00-22:00",
+    "expected_ctr": 0.095,
+    "expected_conversion": 0.056,
+    "fatigue_risk": "medium",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-1154",
+    "channel_scores": {
+      "sms": 0.83,
+      "whatsapp": 0.51,
+      "push": 0.21,
+      "email": 0.2,
+      "ivr": 0.49,
+      "outbound_call": 0.67
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "19:00-22:00",
+    "expected_ctr": 0.062,
+    "expected_conversion": 0.029,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-3675",
+    "channel_scores": {
+      "sms": 0.8,
+      "whatsapp": 0.58,
+      "push": 0.48,
+      "email": 0.34,
+      "ivr": 0.38,
+      "outbound_call": 0.86
+    },
+    "best_channel": "outbound_call",
+    "secondary_channel": "sms",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.045,
+    "expected_conversion": 0.024,
+    "fatigue_risk": "high",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.67
+  },
+  {
+    "segment_id": "Seg-3577",
+    "channel_scores": {
+      "sms": 0.76,
+      "whatsapp": 0.62,
+      "push": 0.44,
+      "email": 0.38,
+      "ivr": 0.48,
+      "outbound_call": 0.78
+    },
+    "best_channel": "outbound_call",
+    "secondary_channel": "sms",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.046,
+    "expected_conversion": 0.026,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.67
+  },
+  {
+    "segment_id": "Seg-3479",
+    "channel_scores": {
+      "sms": 0.68,
+      "whatsapp": 0.69,
+      "push": 0.57,
+      "email": 0.38,
+      "ivr": 0.37,
+      "outbound_call": 0.77
+    },
+    "best_channel": "outbound_call",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.05,
+    "expected_conversion": 0.03,
+    "fatigue_risk": "medium",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.67
+  },
+  {
+    "segment_id": "Seg-3528",
+    "channel_scores": {
+      "sms": 0.74,
+      "whatsapp": 0.63,
+      "push": 0.54,
+      "email": 0.31,
+      "ivr": 0.37,
+      "outbound_call": 0.79
+    },
+    "best_channel": "outbound_call",
+    "secondary_channel": "sms",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.046,
+    "expected_conversion": 0.031,
+    "fatigue_risk": "high",
+    "offer_affinity": "loyalty_pack",
+    "model_confidence": 0.67
+  },
+  {
+    "segment_id": "Seg-3626",
+    "channel_scores": {
+      "sms": 0.79,
+      "whatsapp": 0.62,
+      "push": 0.44,
+      "email": 0.38,
+      "ivr": 0.46,
+      "outbound_call": 0.85
+    },
+    "best_channel": "outbound_call",
+    "secondary_channel": "sms",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.053,
+    "expected_conversion": 0.03,
+    "fatigue_risk": "high",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.67
+  },
+  {
+    "segment_id": "Seg-11130",
+    "channel_scores": {
+      "sms": 0.78,
+      "whatsapp": 0.66,
+      "push": 0.5,
+      "email": 0.28,
+      "ivr": 0.36,
+      "outbound_call": 0.31
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "16:00-19:00",
+    "expected_ctr": 0.11,
+    "expected_conversion": 0.062,
+    "fatigue_risk": "medium",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-11179",
+    "channel_scores": {
+      "sms": 0.77,
+      "whatsapp": 0.7,
+      "push": 0.55,
+      "email": 0.32,
+      "ivr": 0.34,
+      "outbound_call": 0.26
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "16:00-19:00",
+    "expected_ctr": 0.112,
+    "expected_conversion": 0.057,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-12208",
+    "channel_scores": {
+      "sms": 0.75,
+      "whatsapp": 0.59,
+      "push": 0.47,
+      "email": 0.26,
+      "ivr": 0.22,
+      "outbound_call": 0.31
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "16:00-19:00",
+    "expected_ctr": 0.1,
+    "expected_conversion": 0.054,
+    "fatigue_risk": "medium",
+    "offer_affinity": "reactivation_bonus",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-11648",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.76,
+      "push": 0.63,
+      "email": 0.35,
+      "ivr": 0.22,
+      "outbound_call": 0.25
+    },
+    "best_channel": "whatsapp",
+    "secondary_channel": "sms",
+    "best_time_window": "16:00-19:00",
+    "expected_ctr": 0.118,
+    "expected_conversion": 0.058,
+    "fatigue_risk": "low",
+    "offer_affinity": "ott_bundle",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-12162",
+    "channel_scores": {
+      "sms": 0.76,
+      "whatsapp": 0.72,
+      "push": 0.51,
+      "email": 0.29,
+      "ivr": 0.29,
+      "outbound_call": 0.32
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "19:00-22:00",
+    "expected_ctr": 0.184,
+    "expected_conversion": 0.102,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-12113",
+    "channel_scores": {
+      "sms": 0.74,
+      "whatsapp": 0.67,
+      "push": 0.55,
+      "email": 0.33,
+      "ivr": 0.3,
+      "outbound_call": 0.3
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "19:00-22:00",
+    "expected_ctr": 0.179,
+    "expected_conversion": 0.088,
+    "fatigue_risk": "low",
+    "offer_affinity": "cross_sell_addon",
+    "model_confidence": 0.79
+  },
+  {
+    "segment_id": "Seg-5198",
+    "channel_scores": {
+      "sms": 0.71,
+      "whatsapp": 0.62,
+      "push": 0.46,
+      "email": 0.28,
+      "ivr": 0.34,
+      "outbound_call": 0.39
+    },
+    "best_channel": "sms",
+    "secondary_channel": "whatsapp",
+    "best_time_window": "10:00-18:00",
+    "expected_ctr": 0.068,
+    "expected_conversion": 0.033,
     "fatigue_risk": "medium",
     "offer_affinity": "combo_pack",
     "model_confidence": 0.81
   },
   {
-    "segment_id": "S006",
-    "channel_scores": {"sms": 0.73, "whatsapp": 0.61, "push": 0.36, "email": 0.19, "ivr": 0.47, "outbound_call": 0.55},
+    "segment_id": "Seg-835",
+    "channel_scores": {
+      "sms": 0.74,
+      "whatsapp": 0.52,
+      "push": 0.36,
+      "email": 0.24,
+      "ivr": 0.42,
+      "outbound_call": 0.58
+    },
     "best_channel": "sms",
     "secondary_channel": "outbound_call",
-    "best_time_window": "12:00-15:00",
-    "expected_ctr": 0.11,
-    "expected_conversion": 0.05,
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.038,
+    "expected_conversion": 0.018,
     "fatigue_risk": "high",
-    "offer_affinity": "retention_discount",
-    "model_confidence": 0.76
-  },
-  {
-    "segment_id": "S007",
-    "channel_scores": {"sms": 0.69, "whatsapp": 0.64, "push": 0.5, "email": 0.22, "ivr": 0.39, "outbound_call": 0.32},
-    "best_channel": "sms",
-    "secondary_channel": "whatsapp",
-    "best_time_window": "09:00-12:00",
-    "expected_ctr": 0.12,
-    "expected_conversion": 0.065,
-    "fatigue_risk": "low",
-    "offer_affinity": "cross_sell_addon",
-    "model_confidence": 0.78
-  },
-  {
-    "segment_id": "S008",
-    "channel_scores": {"sms": 0.38, "whatsapp": 0.74, "push": 0.88, "email": 0.42, "ivr": 0.1, "outbound_call": 0.08},
-    "best_channel": "push",
-    "secondary_channel": "whatsapp",
-    "best_time_window": "18:00-21:00",
-    "expected_ctr": 0.22,
-    "expected_conversion": 0.11,
-    "fatigue_risk": "low",
     "offer_affinity": "ott_bundle",
-    "model_confidence": 0.88
+    "model_confidence": 0.8
+  },
+  {
+    "segment_id": "Seg-786",
+    "channel_scores": {
+      "sms": 0.78,
+      "whatsapp": 0.53,
+      "push": 0.3,
+      "email": 0.18,
+      "ivr": 0.43,
+      "outbound_call": 0.6
+    },
+    "best_channel": "sms",
+    "secondary_channel": "outbound_call",
+    "best_time_window": "11:00-14:00",
+    "expected_ctr": 0.032,
+    "expected_conversion": 0.018,
+    "fatigue_risk": "high",
+    "offer_affinity": "retention_pack",
+    "model_confidence": 0.8
   }
 ]
